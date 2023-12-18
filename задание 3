@@ -1,0 +1,5 @@
+data = np.random.normal(16, 2, 1000)
+plt.hist(data, color='r', alpha=0.5)
+
+plt.title('Результаты забега школьников на 100 метров', fontsize=15)
+plt.show()
