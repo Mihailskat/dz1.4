@@ -1,0 +1,13 @@
+plt.figure(figsize=(10, 5))
+
+X = np.random.normal(0, 1, 3000)
+Y = np.random.normal(3, 4, 3000)
+colors = np.random.rand(3000) * 5
+sizes = 1000 * np.random.rand(3000)
+
+
+plt.scatter(X, Y, c=colors, s=sizes, alpha=0.5, marker='x')
+plt.xlabel('x', fontsize=20)
+plt.ylabel('y', fontsize=15)
+plt.title('Красота', fontsize=30)
+plt.show()
