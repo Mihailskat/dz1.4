@@ -1,0 +1,20 @@
+import matplotlib.pyplot as plt
+%matplotlib inline 
+import numpy as np
+
+def f(x):
+  return np.sin(x)+np.pi*np.cos(x)**2
+
+plt.figure(figsize=(10, 5))
+
+x = np.linspace(-5, 5, 100)
+
+plt.plot(x, f(x), linewidth=3, color='g', dashes=[5, 2], label='Вот такая моя функция', alpha=0.5)
+plt.grid()
+plt.xlabel('x', fontsize=20)
+plt.ylabel('y', fontsize=20)
+plt.xticks(fontsize=20)
+plt.yticks(fontsize=15)
+plt.title('Моя функция!', fontsize=30)
+plt.legend(fontsize=1, loc=0)
+plt.show()
